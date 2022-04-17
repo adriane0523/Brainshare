@@ -1,0 +1,44 @@
+                          
+{% extends "base.html" %}
+{% block page_content %}
+
+
+
+<div class="container-fluid">
+    
+
+
+
+</div>
+
+
+<div class=" row container-fluid" >
+
+
+    
+
+    <div class  = "col-md-3">
+    
+        <div class="sidenav na">
+            <a style="font-size: 1.1rem; margin-bottom: .5rem;"    href = "{% url 'policy_delphi'%}">Back to Modified Policy Delphi</a>
+        </div>
+      
+    </div>
+
+    <div  class="col-md-8 offset-md-0" style = "padding-bottom: 0 rem">
+
+
+        <div class="col-md-10 offset-md-0" style="padding-top: 8rem;">
+            <h3> {{posts.title}} </h3>
+          
+        
+            {{ posts.content | safe }}
+    
+            
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

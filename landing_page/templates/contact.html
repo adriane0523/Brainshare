@@ -1,0 +1,185 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
+
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+
+		<li class="nav-item">
+		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+		</li>
+
+		
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Our Project
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  
+			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
+			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+
+			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
+   
+		  </div>
+		</li>
+
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   Our Research
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+		  </div>
+		</li>
+
+
+
+		<li class="nav-item">
+		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+		</li>
+
+		<li class="nav-item active">
+		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+		</li>
+
+	  
+	  </ul>
+	</div>
+
+
+</nav>
+
+<body>
+ <!--- Start ABOUT Section -->
+ <div class = "text-center hero-image3">
+	<div class = "hero-main-text">
+<h1> Contact Us</h1></div>
+
+
+</div>
+
+<div style = "  padding-top: 4rem; padding-bottom: 12rem;"class = " narrow text-center" >
+	<h5>For all project inquries, please contact: </h5>
+	<hr>
+
+	<div class = "row" style="padding-top: 2rem;">
+	
+
+		<div class = "offset-xl-2 col-xl-3">
+
+					
+			<div class = "contact">
+				<h3>Amy Lynn McGuire, J.D., Ph.D.</h3>
+				<h5>Co-Principal Investigator</h5>
+				<div class = "contact-img">
+					<img src = "{% static 'email.svg' %}">
+					<p>amcguire@bcm.edu </p>
+				</div>
+
+				<div class = "contact-img">
+					<img src = "{% static 'pin.svg' %}">
+					<p>A1 Baylor Plaza, Houston, TX 77030</p>
+				</div>
+
+				
+			</div>
+					
+		</div>
+
+
+		<div class = "offset-xl-2 col-xl-3">
+			<div class = "contact">
+				<h3>Robert Cook-Deegan, MD</h3>
+				<h5>Co-Principal Investigator</h5>
+				<div class = "contact-img">
+					<img src = "{% static 'email.svg' %}">
+					<p>bcd@asu.edu</p>
+				</div>
+		
+				<div class = "contact-img">
+					<img src = "{% static 'pin.svg' %}">
+					<p>1800 1st Street, Washington, DC 20006</p>
+				</div>
+		
+				
+			</div>
+		</div>
+
+
+		<div class = "offset-xl-2 col-xl-3">
+			<div class = "contact">
+				<h3>Kara Hapke, MA</h3>
+				<h5>Research Coordinator</h5>
+				<div class = "contact-img">
+					<img src = "{% static 'email.svg' %}">
+					<p>kara.hapke@asu.edu </p>
+				</div>
+		
+				<div class = "contact-img">
+					<img src = "{% static 'pin.svg' %}">
+					<p>1800 1st Street, Washington, DC 20006</p>
+				</div>
+		
+				
+			</div>
+		</div>
+
+		<div class = "offset-xl-2 col-xl-3">
+			<div class = "contact">
+				<h3>Janis Geary, Ph.D.</h3>
+				<h5>Research Associate</h5>
+				<div class = "contact-img">
+					<img src = "{% static 'email.svg' %}">
+					<p>jdgeary@asu.edu</p>
+				</div>
+		
+				<div class = "contact-img">
+					<img src = "{% static 'pin.svg' %}">
+					<p>1800 1st Street, Washington, DC 20006</p>
+				</div>
+		
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+{% endblock %}

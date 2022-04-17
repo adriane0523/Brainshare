@@ -1,0 +1,272 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
+
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+		</li>
+		<li class="nav-item dropdown active">
+		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Our Project
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  
+			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
+			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
+   
+		  </div>
+		</li>
+
+		<li class="nav-item dropdown ">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   Our Research
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+		  </div>
+		</li>
+
+
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+		</li>
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+		</li>
+
+
+
+
+	  
+	  </ul>
+	</div>
+
+
+</nav>
+<body>
+ <!--- Start ABOUT Section -->
+ <div class = "text-center hero-image2">
+	<div class = "hero-main-text">
+<h1> Project Aims</h1></div>
+
+
+</div>
+
+
+
+	<div class = "about-nav research-nav text-center ">
+		
+		<a href = "{% url 'about_sulston' %}">About John Sulston</a>
+		<a href = "{% url 'about' %}">Project Narrative</a>
+		<a style="color: black; font-weight: 500;">Project Aims</a>
+		<a href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+		<a href = "{% url 'about_importance' %}">Importance</a>
+		
+		<hr>
+	</div>
+
+
+ 
+<!--- End ABOUT Section -->
+<div   id = "background" >
+	
+	<div class=" narrow lead about-narrative">
+
+		<p> By the time John Sulston scribbled the first draft of the Bermuda Principles on a whiteboard in February 1996, several genes associated with inherited risk of cancer, 
+			including BRCA1 and BRCA2, had been identified. Concerns that proprietary rights and secrecy would cast a shadow over genomic science aligned with requirements for daily sharing
+			 of DNA sequence data from high-throughput sequencing centers to motivate open data policies. This open science norm is now spilling over to other fields, including translational and clinical genomics.  <br>
+		<br> Two decades after Bermuda, genomic variants associated with inherited cancer risk remain a battleground where open science and proprietary data practices vie for dominance. Our previous work
+		 (McGuire R01 GH008919-S1) explores the ways in which these battles are playing out in understanding cancer-gene variants. This proposal builds on that work by exploring the creation of a knowledge 
+		 commons for inherited cancer variants (“cancer genomic variant commons”). We focus on inherited cancer risk in this proposal because efforts to create a cancer genomic variant commons are already 
+		 underway, but incomplete. We are hopeful that our results can also inform the creation of genomic 
+		commons for other conditions. The ultimate success of any knowledge commons will hinge on the development of policies to address disincentives for sharing, as well as implementation challenges.<br>
+		<br><b>The overall goal of this project is to produce a foundation of empirical knowledge, on which we can build policy options to address the challenges that confront the nascent knowledge 
+			scommons concerning variants associated with inherited cancer risk. We will map those options to institutions and those with authority to act on them. </b> <br> <br>
+		
+			This study will be guided by an advisory committee with diverse expertise and perspectives, borrowing features of expert
+			 committee-based policy methods employed by Dr. Cook-Deegan when he was at the former Office of Technology Assessment (OTA) 
+			 and National Academy of Sciences, Engineering and Medicine (NASEM). The empirical methods build on our experience with two related studies:
+			  “PoliSeq” (McGuire R01 HG006460) addressed the clinical integration of genomic sequencing using a modified policy Delphi process analogous to
+			   Aim 3 below, and “Building the Medical Information Commons (MIC)” (McGuire R01 HG008918)
+			 addressed issues confronted in fulfilling the aspirations of the 2011 NASEM report on Precision Medicine, here in a domain—cancer genomic variants—likely to be a harbinger of genomic medicine more generally.</p> 
+
+		</div>
+
+
+	
+	
+	</div>
+</div>
+
+
+
+
+<div id ="aim" >
+	<div class = "jumbotron">
+		<div class = "narrow">
+			
+            <div style="padding-top: 0rem;" class ="col-12 lead">
+				
+				<div class="text-center">
+					<P style="padding-bottom: 4rem;"> Click the icon for details below</P> 
+				</div>
+			</div>
+		
+			<div class = "row text-center" style = "padding-top: 0rem;">
+				<div class = "col-md-3">
+
+					<div class = "feature">
+						<a style = "color:rgb(165, 184, 200);" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<svg style = "color:black"class="bi bi-clipboard-data" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M4 1.5H3a2 2 0 00-2 2V14a2 2 0 002 2h10a2 2 0 002-2V3.5a2 2 0 00-2-2h-1v1h1a1 1 0 011 1V14a1 1 0 01-1 1H3a1 1 0 01-1-1V3.5a1 1 0 011-1h1v-1z" clip-rule="evenodd"/>
+							<path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm-3-1A1.5 1.5 0 005 1.5v1A1.5 1.5 0 006.5 4h3A1.5 1.5 0 0011 2.5v-1A1.5 1.5 0 009.5 0h-3z" clip-rule="evenodd"/>
+							<path d="M4 11a1 1 0 112 0v1a1 1 0 11-2 0v-1zm6-4a1 1 0 112 0v5a1 1 0 11-2 0V7zM7 9a1 1 0 012 0v3a1 1 0 11-2 0V9z"/>
+						</svg>
+						<h3 style = "padding-top: 1rem ;color:rgb(165, 184, 200);">Aim 1:</h3> </a>
+						<p>Describe data sharing structures and practices for inherited cancer-risk variants.</p>
+						
+					
+					</div>
+				</div>
+
+
+				<div class = "col-md-3">
+					<div class = "feature">
+						<a style = "color:rgb(115, 151, 182)" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<svg  style = "color:black"class="bi bi-search" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+							<path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+						  </svg>
+						<td>
+						<h3 style = "padding-top: 1rem ;color:rgb(115, 151, 182) ">Aim 2:</h3></a>
+						<p>Identify the challenges of developing a sustainable commons for inherited cancer-risk variants.</p>
+						
+					</div>
+				</div>
+
+		
+				<div class = "col-md-3">
+					<div class = "feature">
+						<a style= "color:rgb( 196, 93, 21);" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<svg style="color: black;" class="bi bi-map" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M15.817.613A.5.5 0 0116 1v13a.5.5 0 01-.402.49l-5 1a.502.502 0 01-.196 0L5.5 14.51l-4.902.98A.5.5 0 010 15V2a.5.5 0 01.402-.49l5-1a.5.5 0 01.196 0l4.902.98 4.902-.98a.5.5 0 01.415.103zM10 2.41l-4-.8v11.98l4 .8V2.41zm1 11.98l4-.8V1.61l-4 .8v11.98zm-6-.8V1.61l-4 .8v11.98l4-.8z" clip-rule="evenodd"/>
+						  </svg>
+
+						<h3 style = "padding-top: 1rem; color:rgb( 196, 93, 21);">Aim 3:</h3></a>
+						<p>Formulate policy options to address the most important challenges identified in Aim 2, and map policy options to institutions and actors who can act on them.</p>
+					</div>
+				</div>
+			
+
+
+				<div class = "col-md-3">
+					<div class = "feature">
+						<a style = "color:rgb(196, 8, 8)" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapseExample">
+						<svg style="color: black;" class="bi bi-chat" width="5em" height="5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M2.678 11.894a1 1 0 01.287.801 10.97 10.97 0 01-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 01.71-.074A8.06 8.06 0 008 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 01-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 00.244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 01-2.347-.306c-.52.263-1.639.742-3.468 1.105z" clip-rule="evenodd"/>
+						  </svg>
+						<h3 style = "padding-top: 1rem; color:rgb(196, 8, 8);">Aim 4:</h3></a>
+						<p>Translate findings and options from Aims 1-3 by engaging with policy-makers and other actors.</p>
+						
+					</div>
+				</div>
+			</div>
+
+          
+			</div>
+
+
+			<div class="collapse" id="collapse1">
+				<div class="card card-body">
+					<h5>Aim 1</h5>
+					<p>We will employ careful historical methods, informational interviews, network analysis of publications 
+						and patents, citations to publications and patents, and other methods to produce a case study of the nascent commons that 
+						exists in cancer variant genomics, while also noting alternative frameworks on the continuum between fully public resources and proprietary data.</p>
+				</div>
+			  </div>
+
+			  
+			<div class="collapse" id="collapse2">
+				<div class="card card-body">
+					<h5>Aim 2</h5>
+					<p>Using established design principles (e.g., the Institutional Analysis and Development (IAD) framework for successful commons) and principles that have emerged from our previous work, we will identify 
+						barriers and gaps in the data sharing structures and practices described in Aim 1. We will explore these and other relevant challenges through in-depth interviews with: patients, families, advocacy organizations; 
+						testing laboratories; databases, data resources; curators, annotators, variant interpreters; and genetic counselors, clinicians and researchers (professional users of the data).</p>
+				</div>
+			  </div>
+
+			  
+			<div class="collapse" id="collapse3">
+				<div class="card card-body">
+					<h5>Aim 3</h5>
+					<p>We will employ a Mdified Policy Delphi process with our advisory committee members to rank the challenges identified in Aim 2 according to importance and tractability and to explore policy 
+						options to address those ranked most important and tractable. We will then map the options to institutions and actors who can act on them. (Go to Modified Policy Delphi for more info)
+					 </p>
+
+				</div>
+			  </div>
+
+
+			  
+			<div class="collapse" id="collapse4">
+				<div class="card card-body">
+					<h5>Aim 4</h5>
+					<p>We will host a final meeting of our advisory committee and reach out to those institutions and actors who can implement policy options as identified in Aim 3. Target audiences are likely to include agency officials (e.g., NIH, FDA, CDC, CMS),
+						members and staff in Congress, nongovernment organizations, 
+					   and health professional and trade organizations. We will generate materials tailored to the specific needs of different audiences.
+					   </p>
+				</div>
+			  </div>
+
+
+		</div>
+	</div>
+
+
+
+
+	<div class ="text-center">
+		<img src="{% static 'graph.PNG' %}" class="img-fluid" />
+	</div>
+</div>
+
+
+
+
+     
+<div class = "text-center"><a  style = "margin-bottom: 2rem; margin-top: 2rem;" class="btn btn-outline-secondary" href = '#'>Click here to go back up top</a></div>
+
+
+{% endblock %}

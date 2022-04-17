@@ -1,0 +1,180 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
+
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+
+		<li class="nav-item">
+		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+		</li>
+
+		
+		<li class="nav-item dropdown active">
+		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Our Project
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  
+			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
+			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+
+			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
+   
+		  </div>
+		</li>
+
+		<li class="nav-item dropdown ">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   Our Research
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+		  </div>
+		</li>
+
+
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+		</li>
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+		</li>
+
+
+
+
+	  
+	  </ul>
+	</div>
+
+
+</nav>
+<body>
+
+    <div class = "text-center hero-image2">
+        <div class = "hero-main-text">
+    <h1>About John Sulston</h1></div>
+    
+    
+    </div>
+    
+  
+    
+		<div class = "about-nav research-nav text-center ">
+            
+            <a  style="color: black; font-weight: 500;">About John Sulston</a>
+            <a href = "{% url 'about' %}">Project Narrative</a>
+            <a href = "{% url 'about_aims' %}" >Project Aims</a>
+            <a href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+            <a href = "{% url 'about_importance' %}">Importance</a>
+         
+            <hr>
+        </div>
+      
+     
+
+        <div style = "padding-bottom: 3rem;">
+            <div   id = "background" >
+	
+                <div class=" narrow lead about-john about-narrative ">
+            
+                    <div class="float-left">
+                        <figure>
+                        <img src="{% static 'john.jpg' %}" style="padding-right: 2rem;" class="john">
+        
+                    </figure>
+					</div>
+					
+                    <blockquote>
+					   " proprietary databases don’t work for such basic and broadly needed information as the sequence of the human genome " <br> <br> - John Sulston <br> <br>
+					  <!---- <small><a target ="_blank" href="https://www.nobelprize.org/uploads/2018/06/sulston-lecture.pdf#page=16">Nobel Prize Speech p. 378</a></small>--> 
+					</blockquote>
+					
+					<div style="display: block; padding-top: 5rem;">
+					<p> Sir John Edward Sulston CH FRS MAE (27 March 1942-6 March 2018) 
+						was a British biologist who won the <a  target ="_blank" href = "https://www.nobelprize.org/uploads/2018/06/sulston-lecture.pdf"> Nobel Prize in Physiology or 
+						Medicine</a> for his work on the cell lineage and genome of the worm 
+						<i>Caenorhabditis elegans</i> in 2002 with his colleagues Sydney Brenner and 
+						Robert Horvitz. He was a leader in human genome research, founding director 
+						of the <a  target ="_blank" href = "https://www.sanger.ac.uk/">Wellcome Sanger Institute</a> in Cambridge, UK, and Chair of the <a  target ="_blank" href = "http://www.isei.manchester.ac.uk/">Institute 
+						for Science, Ethics and Innovation</a> at the University of Manchester.  
+						Sulston was a champion of science in the public interest, including free
+						 public access to scientific data, and opposed premature gene patenting.  
+						 He and Georgina Ferry co-authored <a  target ="_blank" href="https://www.amazon.com/Common-Thread-Science-Politics-Ethics/dp/0309084091"><i>The Common Thread: A Story of Science, 
+						 Politics, Ethics and the Human Genome,</i></a> an encomium for open genomics. 
+						  He was co-author with Robert Waterston of the <a  target ="_blank" href="https://pubmed.ncbi.nlm.nih.gov/30390178/">Bermuda Principles for daily
+						  prepublication disclosure</a> of human genomic sequence data, which guided the
+						   publicly funded Human Genome Project 1996-2003.
+						
+					
+					</p> 
+					<h3 style="padding-top: 5rem;padding-bottom:2rem;">More on John Sulston:</h3>
+					<div class = "row" >
+						{% for link in links %}
+						<div class = "resource col-md-10 border " style="margin-bottom:2rem;">
+						
+								<h5 style="padding-top: 1rem; color:black">{{ link.title | safe }}</h5>
+				
+								<p>{{ link.description }}</p>
+							
+								 {{link.link | safe}}
+				
+							</div>
+						{% endfor %}              
+						</div>				
+
+					
+				
+				
+					</div>
+                
+                
+				</div>
+				
+				
+            </div>
+            
+            
+       
+        </div>
+
+<!--- End Course Section -->
+     
+<div class = "text-center"><a  style = "margin-bottom: 2rem;" class="btn btn-outline-secondary" href = '#'>Click here to go back up top</a></div>
+
+</body>
+</html>
+
+
+{% endblock %}

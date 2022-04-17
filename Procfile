@@ -1,0 +1,1 @@
+web: gunicorn sulstonProject.wsgi --log-file -

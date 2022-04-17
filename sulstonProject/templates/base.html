@@ -1,0 +1,97 @@
+
+{% load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="{% static 'project1.PNG' %}"/>
+  <meta name="twitter:image" content="{% static 'project1.PNG' %}"/>
+  <meta name="description" content="The Sulston Project - Making the knowledge commons for interpreting cancer genomic variants more effective ">
+  <meta name="keywords" content="Sulston, knowledge commons, BRCA, cancer risk, BROCA, data commons, cancer genetic testing">
+  <meta name="author" content="Adriane Inocencio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <head>
+    <title>The Sulston Project</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'fav_icon.ico' %}"/>
+  </head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type ="text/css" href = "{%static '/style.css' %}">
+  <link rel="stylesheet" href = "{%static '/fixed.css' %}">
+
+
+    
+
+
+  
+
+
+<div class="container-body">
+    {% block page_content %}{% endblock %}
+
+    <div class="text-center" >
+   
+
+      
+      <div>
+  
+</div>
+
+
+<div id ="contact">
+	<footer>
+
+		<div class ="sticky-bottom  " style="margin-right:5rem">
+
+      <nav class="navbar-custom  ">
+        <div class="navbar-header">
+
+          <h5>The Sulston Project </h5>
+        </div>
+        <div class="navbar-header  " style="padding-bottom: 2rem;">
+          <a href ="{% url 'hello_world'%}">Home</a>  |
+          <a href ="{% url 'about_sulston'%}"> Our Project</a>  |
+          <a href ="{% url 'resources' %}">Our Research</a>  |
+          <a href ="{% url 'bio'%}">Meet our Team</a>  |
+          <a href ="{% url 'contact' %}">Contact Us</a>  |
+          <a href ="{% url 'terms_cond' %}">Terms and Conditions</a>  |
+          <a href ="{% url 'privacy' %}">Privacy Policy</a> |
+          <a href ="{% url 'citations' %}">References</a>  
+       
+
+          
+        </div>
+   
+        <div class="text-center footer-left">
+
+     <small >© 2020 The Sulston Project</small>
+    </div>
+
+  </div>
+    
+  
+    </nav>
+
+
+
+    
+	</footer>	
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178668008-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-178668008-1');
+</script>
+
+
+
+</html>

@@ -1,0 +1,131 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+
+</head>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
+
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+
+		<li class="nav-item">
+		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+		</li>
+
+		
+		<li class="nav-item dropdown active">
+		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Our Project
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  
+			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
+			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+
+			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
+   
+		  </div>
+		</li>
+
+		<li class="nav-item dropdown ">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   Our Research
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+		  </div>
+		</li>
+
+
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+		</li>
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+		</li>
+
+
+
+
+	  
+	  </ul>
+	</div>
+
+
+</nav>
+
+<body>
+ <!--- Start ABOUT Section -->
+
+<div class = "text-center hero-image2">
+	<div class = "hero-main-text">
+<h1 > Project Narrative</h1></div>
+
+
+</div>
+
+
+
+	<div class = "about-nav research-nav text-center ">
+	
+		
+		<a href = "{% url 'about_sulston' %}">About John Sulston</a>
+		<a style="color:black;font-weight: 500;">Project Narrative</a>
+		<a href = "{% url 'about_aims' %}">Project Aims</a>
+		<a href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+		<a href = "{% url 'about_importance' %}">Importance</a>
+		<hr>
+	</div>
+
+
+
+
+<div id = "narrative" class=" narrow"  >
+
+	<div class = "lead about-narrative">
+	<p>The nascent knowledge commons for interpreting genomic variants regarding inherited cancer risk is essential to advancing science and improving clinical care.
+		 This study will carefully examine the challenges of developing a sustainable commons for inherited cancer-risk variants and generate policy solutions for challenges identified as most important and feasible to address 
+		by engaging expert stakeholders and relevant constituencies, including: data contributors and end-users, data generators, data sources, data facilitators,
+		 and professional data users. It will then present findings and policy options to audiences that can act on them.</p></div>
+</div>
+
+
+     
+
+
+ <!-- CUSTOM BLOCKQUOTE -->
+
+ 
+</body>
+</html>
+
+
+{% endblock %}

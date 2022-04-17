@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@media (min-width: 276px) {
+    .hero-logo img {
+        width: auto;
+        height: 10rem
+    }
+    h1 {
+        font-size: 1.7rem
+    }
+    h5 {
+        font-size: 0.6rem
+    }
+    .john {
+        width: 178px;
+        height: auto;
+    }
+    body {
+        font-size: .6rem;
+    }
+    .body-p p {
+        font-size: 0.6rem;
+    }
+    .narrative h1 {
+        font-size: 1.2rem
+    }
+    .john {
+        width: 120px;
+        height: auto;
+    }
+    .about-narrative {
+        font-size: 0.8rem;
+    }
+    h3 {
+        font-size: 1.2rem
+    }
+    .clients img {
+        width: 80px;
+        height: 80px;
+    }
+    .clients h1 {
+        font-size: 1.5rem
+    }
+    .narrow {
+        width: 96%;
+        margin: 0rem auto;
+        padding-top: 2rem;
+    }
+    .about-john blockquote {
+        font-size: 0.9rem;
+    }
+    .contact {
+        width: 300px;
+    }
+    .about-nav a {
+        font-size: 0.8rem;
+    }
+    #pdf {
+        width: 300px;
+        height: 700px;
+    }
+    .resource img{
+        width:40%;
+        height: 40%;
+    }
+}
+
+
+/*Small (sm) devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    .hero-image img {
+        height: 0rem;
+        width: auto;
+    }
+    h1 {
+        font-size: 1.9rem
+    }
+    h5 {
+        font-size: 0.6rem
+    }
+    body {
+        font-size: .6rem;
+    }
+    .body-p p {
+        font-size: 0.6rem;
+    }
+    .narrative h1 {
+        font-size: 1.4rem
+    }
+    .about-narrative {
+        font-size: 0.8rem;
+    }
+    .john {
+        width: 140px;
+        height: auto;
+    }
+    h3 {
+        font-size: 1.4rem
+    }
+    .clients img {
+        width: 80px;
+        height: 80px;
+    }
+    .clients h1 {
+        font-size: 1.8rem
+    }
+    .narrow {
+        width: 90%;
+        margin: 0rem auto;
+        padding-top: 2rem;
+    }
+    .about-john blockquote {
+        font-size: 1rem;
+    }
+    .contact {
+        width: 500px;
+    }
+    .about-nav a {
+        font-size: 1rem;
+    }
+    #pdf {
+        width: 500px;
+        height: 700px;
+    }
+    .resource img{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+
+/*Medium (md) devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    .hero-image img {
+        height: 0rem;
+        width: auto;
+    }
+    h1 {
+        font-size: 2.1rem
+    }
+    h5 {
+        font-size: 0.8rem
+    }
+    body {
+        font-size: .8rem;
+    }
+    .body-p p {
+        font-size: 0.8rem;
+    }
+    .narrative h1 {
+        font-size: 1.6rem
+    }
+    .about-narrative {
+        font-size: 1rem;
+    }
+    .john {
+        width: 170px;
+        height: auto;
+    }
+    h3 {
+        font-size: 1.6rem
+    }
+    .clients img {
+        width: 100px;
+        height: 100px;
+    }
+    .clients h1 {
+        font-size: 2.1rem
+    }
+    .narrow {
+        width: 75%;
+        margin: 1.5rem auto;
+        padding-top: 2rem;
+    }
+    .about-john blockquote {
+        font-size: 1.2rem;
+    }
+    .contact {
+        width: 500px;
+    }
+    .about-nav a {
+        font-size: 1rem;
+    }
+    #pdf {
+        width: 700px;
+        height: 700px;
+    }
+    .resource img{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+
+/*Large (lg) devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+    .hero-image img {
+        height: 13rem;
+        width: auto;
+    }
+    h1 {
+        font-size: 2.3rem
+    }
+    h5 {
+        font-size: 1rem
+    }
+    body {
+        font-size: .8rem;
+    }
+    .body-p p {
+        font-size: 0.8rem;
+    }
+    .narrative h1 {
+        font-size: 2rem
+    }
+    .about-narrative {
+        font-size: 1.2rem;
+    }
+    .john {
+        width: 200px;
+        height: auto;
+    }
+    h3 {
+        font-size: 1.8rem
+    }
+    .clients h1 {
+        font-size: 2.3rem
+    }
+    .clients img {
+        width: 120px;
+        height: 120px;
+    }
+    .narrow {
+        width: 75%;
+        margin: 1.5rem auto;
+        padding-top: 2rem;
+    }
+    .about-john blockquote {
+        font-size: 1.8rem;
+    }
+    #pdf {
+        width: 900px;
+        height: 700px;
+    }
+    .contact {
+        width: 500px;
+    }
+    .about-nav a {
+        font-size: 1.2rem;
+    }
+    .contact h3 {
+        font-size: 1.6rem
+    }
+    .resource img{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+/*Extra (xl) large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+    .hero-image img {
+        height: 13rem;
+        width: auto;
+    }
+    h1 {
+        font-size: 2.5rem
+    }
+    h5 {
+        font-size: 1.2rem
+    }
+    body {
+        font-size: 1rem;
+    }
+    .body-p p {
+        font-size: 1rem;
+    }
+    .narrative h1 {
+        font-size: 2.5rem
+    }
+    .about-narrative {
+        font-size: 1.4rem;
+    }
+    .john {
+        width: 233px;
+        height: auto;
+    }
+    h3 {
+        font-size: 2rem
+    }
+    .clients img {
+        width: 150px;
+        height: 150px;
+    }
+    .clients h1 {
+        font-size: 2.5rem
+    }
+    .sidenav {
+        height: auto;
+        width: 300px;
+        top: 14rem;
+        left: 8rem;
+    }
+    .about-john blockquote {
+        font-size: 2.2rem;
+    }
+    .about-john small {
+        font-size: 1.8rem;
+    }
+    #pdf {
+        width: 1100px;
+        height: 700px;
+    }
+    .narrow {
+        width: 75%;
+        margin: 1.5rem auto;
+        padding-top: 2rem;
+    }
+    .contact {
+        width: 500px;
+    }
+    .contact h3 {
+        font-size: 1.4rem
+    }
+    .about-nav a {
+        font-size: 1.5rem;
+    }
+    .resource img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .research-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-image img {
+        height: 0px;
+        width: 0px
+    }
+}
+
+.about-john blockquote {
+    font-style: italic;
+}
+
+.hero-logo img {
+    float: left;
+    padding-right: 2rem;
+}
+
+.hero-image2 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url("john5.jpg");
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+    /* Set a specific height */
+    height: 60%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image3 {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .8)), url("john7.jpg");
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-bottom: 2rem;
+    /* Set a specific height */
+    height: 50%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* The hero image */
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("john3.jpg");
+    padding-top: 25rem;
+    /* Set a specific height */
+    height: 50%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.landing-page-icon-align h3 {
+    padding-top: 2rem;
+}
+
+.landing-page-icon-align p {
+    padding-top: 2rem;
+}
+
+.landing-page-ppl img {
+    padding-right: 5rem;
+    height: 10rem;
+    width: auto;
+    float: left;
+}
+
+.landing-page-ppl {
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+}
+
+.landing-page-ppl p {
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.landing-page-ppl a {
+    color: black;
+}
+
+.landing-page-icon img {
+    padding-top: 2rem;
+    height: 8rem;
+    width: auto;
+}
+
+.landing-page-icon h3 {
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+}
+
+.landing-page-icon a {
+    color: black;
+}
+
+.hero-main-text {
+    overflow: hidden;
+    color: white;
+    padding-top: 2rem;
+}
+
+.landing-page-title {
+    padding-top: 10rem;
+    padding-bottom: .5rem;
+}
+
+.landing-page-statement {
+    font-size: 95%;
+}
+
+
+/* Place text in the middle of the image */
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 10vw;
+}
+
+footer {
+    background-color: #576068;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer img {
+    margin-top: 1rem;
+}
+
+.navbar-custom {
+    background-color: #576068;
+    color: white;
+    padding-left: 5rem;
+}
+
+.navbar-custom h5 {
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.footer-left p {
+    color: white;
+    padding-top: 1rem;
+}
+
+.footer-left small {
+    color: white;
+    margin-top: 5rem;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+
+/* Navigation */
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background-color: white!important;
+}
+
+.navbar-brand img {
+    /*height*/
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding-top: .8rem;
+}
+
+
+/* landing page */
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caption span {
+    display: inline-block;
+    border-bottom: 3px solid;
+    padding-bottom: 2px;
+}
+
+.caption h1 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h5 {
+    font-size: 1.7rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: .6rem;
+}
+
+.btn-lg {
+    color: white;
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+}
+
+
+/*============= COURSE SECTION =============*/
+
+.research-nav {
+    width: auto;
+    border: 2px solid white!important;
+    padding-top: 1rem;
+}
+
+.about-nav {
+    overflow-wrap: break-word;
+    width: auto;
+    padding-top: 1rem;
+}
+
+.about-nav a {
+    white-space: nowrap;
+    overflow-wrap: break-word;
+    margin: 10px 20px 10px 10px;
+    color: gray;
+}
+
+#narrative {
+    padding-bottom: 15rem;
+}
+
+#importance {
+    padding-bottom: 15rem;
+}
+
+
+/* start of meet the team*/
+
+.clients p {}
+
+.clients img {
+    object-fit: cover;
+}
+
+.vl {
+    border-left: 2px solid green;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+.underline {
+    width: 20rem;
+    display: inline-block;
+    border-bottom: 2px solid lightblue;
+    margin-bottom: 1rem;
+}
+
+.underline-fit {
+    display: inline-block;
+    border-bottom: 2px solid lightblue;
+    margin-bottom: 1rem;
+}
+
+.underline-red {
+    width: 20rem;
+    display: inline-block;
+    border-bottom: 2px solid red;
+    margin-bottom: 1rem;
+}
+
+.underline-red-fit {
+    display: inline-block;
+    border-bottom: 2px solid red;
+    margin-bottom: 1rem;
+}
+
+.underline-green {
+    width: 20rem;
+    display: inline-block;
+    border-bottom: 2px solid #25ee78;
+    margin-bottom: 1rem;
+}
+
+.underline-green-fit {
+    display: inline-block;
+    border-bottom: 2px solid green;
+    margin-bottom: 1rem;
+}
+
+.underline-blue {
+    width: 20rem;
+    display: inline-block;
+    border-bottom: 2px solid #0d2da5;
+    margin-bottom: 1rem;
+}
+
+.underline-blue-fit {
+    display: inline-block;
+    border-bottom: 2px solid #0d2da5;
+    margin-bottom: 1rem;
+}
+
+.underline-orange {
+    width: 20rem;
+    display: inline-block;
+    border-bottom: 2px solid #f1a527;
+    margin-bottom: 1rem;
+}
+
+.underline-orange-fit {
+    display: inline-block;
+    border-bottom: 2px solid #f1a527;
+    margin-bottom: 1rem;
+}
+
+.underline-purple {
+    width: 20rem;
+    display: inline-block;
+    border-bottom: 2px solid #7c24cb;
+    margin-bottom: 1rem;
+}
+
+.underline-purple-fit {
+    display: inline-block;
+    border-bottom: 2px solid #7c24cb;
+    margin-bottom: 1rem;
+}
+
+.blockquote-custom {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+}
+
+
+/* The sidebar menu */
+
+.sidenav {
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    background-color: #E9EAED;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+.sidenav h3 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+}
+
+.people-link a {
+    color: black;
+}
+
+.people-link a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resource {
+    padding: 1rem;
+    border-spacing: 15px 50px;
+}
+
+.about-narrative a {
+    color: #748fc8;
+}
+
+.resource a {
+    color: #748fc8;
+}
+
+.resource h5 {
+    color: #748fc8;
+}
+
+.resource img{
+    width:40%;
+    height: 40%;
+}
+
+.contact {
+    padding: 20px;
+    margin: 0rem auto 0rem auto;
+    display: block;
+    text-align: left;
+}
+
+.contact img {
+    width: 20px;
+    height: auto;
+}
+
+.contact-img img,
+{
+    display: inline;
+}
+
+.contact-img p {
+    display: inline;
+}
+
+.directory {
+    padding: 4px 2px 1px 2px;
+    margin-bottom: 5px;
+}
+
+.directory h5 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

@@ -1,0 +1,131 @@
+{% extends "base.html" %} {% block page_content %} {% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+  <a class="navbar-brand" href="{% url 'hello_world' %}"
+    ><img src="{% static 'logo.png' %}"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="{% url 'about'%}"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Our Project
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'about_sulston' %}"
+            >About John Sulston</a
+          >
+          <a class="dropdown-item" href="{% url 'about' %}"
+            >Project Narrative</a
+          >
+          <a class="dropdown-item" href="{% url 'about_aims' %}"
+            >Project Aims</a
+          >
+          <a class="dropdown-item" href="{% url 'about_MDP' %}"
+            >Modified Policy Delphi</a
+          >
+
+          <a class="dropdown-item" href="{% url 'about_importance' %}"
+            >Why The Sulston Project</a
+          >
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item"
+            target="_blank"
+            href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477"
+            >Project Information
+            <span style="text-transform: none"><br />(NIH RePORT)</span>
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown active">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Our Research
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+          <a class="dropdown-item" href="{% url 'white_papers' %}"
+            >White Papers</a
+          >
+          <a class="dropdown-item" href="{% url 'publications' %}"
+            >Publications</a
+          >
+          <a class="dropdown-item" href="{% url 'related_projects' %}"
+            >Related Projects</a
+          >
+		<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{% url 'relevant_docs' %}"
+            >Relevant Documents</a
+          >
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container-fluid" style="padding-top: 2rem">
+  <div class="col-md-8 offset-md-2" style="padding-bottom: 0 rem">
+    <div class="research-nav about-nav text-center"></div>
+    <hr />
+    <div class="text-center">
+      <h1 id="case_study" style="padding-top: 1rem; padding-bottom: 1rem">
+        Relevant Documents
+      </h1>
+      <hr />
+    </div>
+    <iframe
+      src="https://drive.google.com/embeddedfolderview?id=1Dc7H_bc4KoVwmU1s_mxoKFUKP4LBjN4-#grid"
+      style="width: 100%; height: 600px; border: 0"
+    ></iframe>
+  </div>
+</div>
+<div class="text-center">
+  <a
+    style="margin-bottom: 2rem; margin-top: 2rem"
+    class="btn btn-outline-secondary"
+    href="#"
+    >Click here to go back up top</a
+  >
+</div>
+
+{% endblock %}

@@ -1,0 +1,198 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
+
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav mr-auto">
+
+		<li class="nav-item active">
+		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+		</li>
+		<li class="nav-item dropdown ">
+		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Our Project
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">				  
+			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
+			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
+		  </div>
+		</li>
+
+		<li class="nav-item dropdown ">
+		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		   Our Research
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+		  </div>
+		</li>
+
+
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+		</li>
+
+		<li class="nav-item ">
+		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+		</li>
+
+
+
+
+	  
+	  </ul>
+	</div>
+
+
+</nav>
+
+<body>
+<div class="hero-image">
+	<div class="hero-text">
+		<div class="row">
+		
+			<div class = "col-md-12 hero-logo" style="padding-top: 5rem;" >
+			
+				<img class = "hero-logo" src = "{% static 'logo_icon.png' %}">
+				<p>
+				<div class = " hero-main-text">
+				<h1>The Sulston Project </h1>
+				<h5 >Making the Knowledge Commons for Interpreting Cancer Genomic Variants More Effective</h5>
+			</div>
+
+			</p>
+			</div>
+		</div>
+	  
+	</div>
+  </div>
+  
+<div class="narrow landing-page-statement">
+	
+	<p>High-speed and low-cost sequencing, combined with intense clinical interest, have led to widespread use of multi-gene 
+		testing for inherited variants conferring risk of cancer. Millions of genetic tests for inherited risk of cancer have 
+		been administered since commercial testing of BRCA1/2 variants began in 1996, and yet new variants continue to be found.
+		 Determining a variant’s clinical significance can be a challenge.<br><br>
+		 As hereditary cancer testing panels have transitioned to sequencing dozens of genes, rather than only expressed segments of BRCA1/2, 
+		 the information needed to advance biomedical research and to determine the clinical significance of cancer-gene variants vastly exceeds the capacity of any one lab or institution. <br><br>
+
+		 Interpretation of inherited cancer-gene variants depends on sharing information, that is, on a well-functioning knowledge commons. A commons 
+		 of sorts is already forming, but it is fragile and may not be sustainable. It will still be forming while this project unfolds; indeed the cancer
+		  genomic variant commons will be evolving for decades. Yet fateful decisions are being made in the early creation phase, framing the range of future choices. 
+		  We intend to study this process and give feedback to those making crucial decisions to improve the effectiveness of the cancer genomic variant commons. 
+		  We intend to provide foresight to those building the commons we will live with for decades. 
+
+		  <br><br>
+		  
+			The Sulston Project is supported by a grant from the US National Cancer Institute: <a target="_blank" style=" color:#748fc8;" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">R01 CA237118</a>, April 2019-March 2023.
+		 <br><br></p>
+		 <div class = "text-center">
+		 <a href = "{% url 'about_sulston' %} "  class="btn btn-dark" style="margin:3px">  Read more about us</a>   <a   class="btn btn-dark" href = "/#explore " style="margin:3px"> Explore Content</a> </div>
+
+	
+</div>
+
+<div > 
+
+
+</div>
+<!--- End LANDING PAGE Section -->
+
+<div id = "explore" class ="landing-page-title text-center"> <h1>Explore The Sulston Project:</h1></div>
+<hr>
+<div class = "row narrow text-center landing-page-icon" style=" padding-top:2rem">
+	<div style = "padding-top: 2rem;" class = "col-xl-4  " >
+		<a href="{% url 'about_sulston' %}">
+		<!---<img src= "{% static 'innovation.svg' %}" > -->
+		<div class = "underline"><h5 >About Us</h5></div>
+		<p>More about our project and how we’re improving the knowledge commons  </p></a>
+	</div>
+
+	<div style = "padding-top: 2rem;" class = "col-xl-4  " >
+		<a href="{% url 'bio'%}">
+		<!---<img src= "{% static 'innovation.svg' %}" > -->
+		<div class = "underline-purple"><h5 >Meet Our Team</h5></div>
+		<p>
+			Please meet our team of people who are improving data sharing for the knowledge commons </p></a>
+	</div>
+
+	<div style = "padding-top: 2rem;" class = "  col-xl-4 " >
+		<a href="{% url  'resources' %}">
+		<!---<img src= "{% static 'case-study.svg' %}" > -->
+	
+	<div class = "underline-red"> <h5 >Case Studies and White Papers</h5></div>
+
+	<p>Read our material that features extended testimonials, diagrams, images, and technical information on the landscape of the commons</p></a>
+	</div>
+
+	
+	<div style = "padding-top: 2rem;" class = "col-xl-4  " >
+		<a href="{% url 'about_MDP' %}">
+		<!---<img src= "{% static 'meeting.svg' %}" > -->
+		<div class = "underline-green"><h5 >Modified Policy Delphi</h5></div>
+		<p>  Read about our modified Delphi method where we have a process of expert policy deliberations on improving the cancer genomic variant commons   </p></a>
+	</div>
+	<div style = "padding-top: 2rem;" class = " col-xl-4  " >
+		<a href="{% url 'publications' %}">
+		<!---<img src= "{% static 'book.svg' %}" > --->
+		<div class = "underline-blue"><h5 >Publications</h5></div> 
+		<p>Content that has been published in research journals   </p></a>
+	</div>
+	<div  style = "padding-top:2rem; margin-bottom: 10rem;" class = "col-xl-4   " >
+		<a href="{% url 'related_projects'%}">
+		<!---<img src= "{% static 'innovation.svg' %}" > -->
+		<div  class = "underline-orange"><h5 >Related Projects</h5></div>
+		<p>The ‘Sulston Project’ is not alone. Come exlplore additional impactful projects that are helping genomic data sharing be more efficent. </p></a>
+	</div>
+
+
+
+	
+	
+
+
+</div>
+     
+<div class = "text-center"><a  style = "margin-bottom: 2rem; margin-top: 2rem;" class="btn btn-outline-secondary" href = '#'>Click here to go back up top</a></div>
+
+
+
+
+<!--- End Course Section -->
+
+
+</body>
+</html>
+
+
+
+
+
+{% endblock %}
