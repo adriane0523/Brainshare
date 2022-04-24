@@ -1,178 +1,244 @@
-{% extends "base.html" %}
-{% block page_content %}
-{% load static %}
+{% extends "base.html" %} {% block page_content %} {% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	
+  <head>
+    <meta charset="utf-8" />
+  </head>
 
-</head>
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
-
-	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  <ul class="navbar-nav mr-auto">
-
-		<li class="nav-item">
-		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
-		</li>
-
-		
-		<li class="nav-item dropdown active">
-		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Our Project
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								  
-			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
-			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
-			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
-			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
-      <a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
-      <div class="dropdown-divider"></div>
-			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
-   
-		  </div>
-		</li>
-
-		<li class="nav-item dropdown ">
-		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		   Our Research
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
-			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
-			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
-			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
-      <a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
-      <div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
-		  </div>
-		</li>
-
-
-
-		<li class="nav-item ">
-		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
-		</li>
-
-		<li class="nav-item ">
-		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
-		</li>
-
-
-
-
-	  
-	  </ul>
-	</div>
-
-
-</nav>
-<body>
-
-    <div class = "text-center hero-image2">
-        <div class = "hero-main-text">
-    <h1> Modified Policy Delphi</h1></div>
-    
-    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+    <a class="navbar-brand" href="{% url 'hello_world' %}"
+      ><img src="{% static 'logo.png' %}"
+    /></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a
+            class="nav-link dropdown-toggle"
+            href="{% url 'about'%}"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Our Project
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'about' %}"
+              >Project Narrative</a
+            >
+            <a class="dropdown-item" href="{% url 'about_aims' %}"
+              >Project Aims</a
+            >
+            <a class="dropdown-item" href="{% url 'about_MDP' %}"
+              >Modified Policy Delphi</a
+            >
+            <a class="dropdown-item" href="{% url 'about_importance' %}"
+              >Why BRAINshare</a
+            >
+            <div class="dropdown-divider"></div>
+            <a
+              class="dropdown-item"
+              target="_blank"
+              href="https://www.bcm.edu/academic-centers/medical-ethics-and-health-policy/research/neuroethics/brainshare"
+              >Project Information
+              <span style="text-transform: none"><br />(BCM Link)</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Our Research
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'resources' %}"
+              >Case Studies</a
+            >
+            <a class="dropdown-item" href="{% url 'white_papers' %}"
+              >White Papers</a
+            >
+            <a class="dropdown-item" href="{% url 'publications' %}"
+              >Publications</a
+            >
+            <a class="dropdown-item" href="{% url 'related_projects' %}"
+              >Related Projects</a
+            >
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'relevant_docs' %}"
+              >Relevant Documents</a
+            >
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">contact us</a>
+        </li>
+      </ul>
     </div>
-    
-  
-    
-   
-      <div class = "about-nav research-nav text-center ">
-            
-            <a href = "{% url 'about_sulston' %}">About John Sulston</a>
-            <a href = "{% url 'about' %}">Project Narrative</a>
-            <a href = "{% url 'about_aims' %}">Project Aims</a>
-            <a style="color: black; font-weight:500 ;">Modified Policy Delphi</a>
-            <a href = "{% url 'about_importance' %}">Importance</a>
-           
-            <hr>
+  </nav>
+  <body>
+    <div class="text-center hero-image2">
+      <div class="hero-main-text">
+        <h1>Modified Policy Delphi</h1>
+      </div>
+    </div>
 
-        </div>
+    <div class="about-nav research-nav text-center">
+      <!-- <a href = "{% url 'about_sulston' %}">About John Sulston</a> -->
+      <a href="{% url 'about' %}">Project Narrative</a>
+      <a href="{% url 'about_aims' %}">Project Aims</a>
+      <a style="color: black; font-weight: 500">Modified Policy Delphi</a>
+      <a href="{% url 'about_importance' %}">Importance</a>
 
+      <hr />
+    </div>
 
-
-    <div id ="delphi" class="narrow" >
-        
-     
-    
-        <div  class ="lead about-narrative">
+    <div id="delphi" class="narrow">
+      <div class="lead about-narrative">
         <p>
-          The Delphi method is a structured, facilitated process of group communication originally developed by RAND Corporation. The design allows expert stakeholders from diverse
-           locations and areas of expertise to interactively forecast the impact of emerging technology. Unlike a traditional Delphi, a  <u>policy Delphi</u> does not aim to achieve consensus,
-            as complete agreement on complex policy issues is an unrealistic expectation. A <u>modified policy Delphi</u> adds qualitative approaches to the traditional process of iterative 
-            stakeholder surveys, including interviews and peer-to-peer discussions.
-            <br><br>
-          
-            The Sulston Project is employing a modified policy Delphi process with a panel of experts (advisory committee (AC) members) to facilitate structured discussion about challenges to
-             the creation and success of an emerging cancer gene variant commons. The goal of this process is to identify the most important and tractable (feasible to address) non-technical 
-             challenges associated with developing a cancer gene variant commons and to explore potential policy options to address those challenges. The results of each round of interactions 
-             are analyzed by project staff and the findings arepresented to our expert panel for discussion and to help inform subsequent rounds of the Delphi. As a final step, we are mapping 
-             specific policy options to institutions and actors who can act on them.<br><br>
-            <b>Our modified policy Delphi consists of four rounds:</b></p></div>
-        <hr>
+          The Delphi method is a structured, facilitated process of group
+          communication originally developed by RAND Corporation. The design
+          allows expert stakeholders from diverse locations and areas of
+          expertise to interactively forecast the impact of emerging technology.
+          Unlike a traditional Delphi, a <u>policy Delphi</u> does not aim to
+          achieve consensus, as complete agreement on complex policy issues is
+          an unrealistic expectation. A <u>modified policy Delphi</u> adds
+          qualitative approaches to the traditional process of iterative
+          stakeholder surveys, including interviews and peer-to-peer
+          discussions. <br /><br />
 
-        <div class = "row" >
-     
-            <div id = "one" class = "resource col-md-10">
-                <h3 style="color:black">Round 1: Identify challenges (Interviews) </h3>
-                <p style="padding-top:1rem;"> Members of the Sulston team conduct semi-structured interviews with AC members to identify a range of non-technical
-                  challenges that hinder the development and success of a cancer gene variant commons. Thematic analysis is used to characterize challenges that are then rated and ranked in Round 2.
-                </p><hr>
-            </div>
-            
+          BRAINshare is employing a modified policy Delphi process with
+          a panel of experts (advisory committee (AC) members) to facilitate
+          structured discussion about challenges to the creation and success of
+          an emerging cancer gene variant commons. The goal of this process is
+          to identify the most important and tractable (feasible to address)
+          non-technical challenges associated with developing a cancer gene
+          variant commons and to explore potential policy options to address
+          those challenges. The results of each round of interactions are
+          analyzed by project staff and the findings arepresented to our expert
+          panel for discussion and to help inform subsequent rounds of the
+          Delphi. As a final step, we are mapping specific policy options to
+          institutions and actors who can act on them.<br /><br />
+          <b>Our modified policy Delphi consists of four rounds:</b>
+        </p>
+      </div>
+      <hr />
 
-            <div id = "two" class = "resource col-md-10">
-                <h3 style="color:black;">Round 2: Rate importance, validity and feasibility of each challenge and rank the most important challenges (Delphi survey) </h3>
-      
-                <p style="padding-top:1rem;">Analysis of the AC interviews (Round 1) yields challenges that AC members are then asked to rate and rank in an online survey in Round 2. Feedback from 
-                  Round 1 is presented to AC members by structuring the survey to include background information about each challenge, summarized from the interview data.</p> <hr>
-                  
-            </div>
-         
-            <div id = "three" class = "resource col-md-10">
-                <h3 style="color:black; ">Round 3: Generate policy options to address high priority challenges (Virtual Meeting) </h3>
-       
-                <p style="padding-top:1rem;">During a virtual meeting with AC members and project staff, Round 2 survey results are presented and discussed, and structured peer-to-peer discussion is used to generate policy options
-                  to address the top-ranking challenges identified in Round 2. The research team qualitatively analyzes the data
-                  and refines suggested policy options for rating and ranking in Round 4. Additional policy options are gathered from literature reviews and Aim 1 case studies.  </p> <hr>
-            </div>
-         
-            <div id="four" class = "resource col-md-10">
-                <h3 style="color:black; ">Round 4: Rate importance, validity and feasibility of each policy option and rank the most important policy options (Delphi survey) </h3>
-                <p style="padding-top:1rem;">The results of Round 3 are presented to AC members and informal feedback is sought on the list of policy options generated. The final proposed policy options for each high-ranking challenge
-                   are presented to AC members to rate and rank in an online survey.
-                   AC members are asked to specify which institution or actor is best positioned to act on each proposed policy option.
-                </p> <hr>
-            </div>
-         
-            <div id = "five" class = "resource col-md-10">
-             
-                <p >This final phase of the modified policy Delphi process produces a list of policy options that are linked to target audiences that might act on them, such as: research organizations, 
-                  government agencies, clinical care providers, national trade and laboratory organizations, professional and scientific organizations, committees of Congress or state legislative bodies, or other “receptors.” 
-                  Serial engagement using the Delphi process with the AC allows us to identify these relevant constituencies and map them to the policy options ranked most important and feasible to address.</p> 
-            </div>
-         
-         
+      <div class="row">
+        <div id="one" class="resource col-md-10">
+          <h3 style="color: black">
+            Round 1: Identify challenges (Interviews)
+          </h3>
+          <p style="padding-top: 1rem">
+            Members of the BRAINshare team conduct semi-structured interviews with
+            AC members to identify a range of non-technical challenges that
+            hinder the development and success of a cancer gene variant commons.
+            Thematic analysis is used to characterize challenges that are then
+            rated and ranked in Round 2.
+          </p>
+          <hr />
         </div>
 
+        <div id="two" class="resource col-md-10">
+          <h3 style="color: black">
+            Round 2: Rate importance, validity and feasibility of each challenge
+            and rank the most important challenges (Delphi survey)
+          </h3>
 
-</div>
+          <p style="padding-top: 1rem">
+            Analysis of the AC interviews (Round 1) yields challenges that AC
+            members are then asked to rate and rank in an online survey in Round
+            2. Feedback from Round 1 is presented to AC members by structuring
+            the survey to include background information about each challenge,
+            summarized from the interview data.
+          </p>
+          <hr />
+        </div>
 
-     
-<div class = "text-center"><a  style = "margin-bottom: 2rem; margin-top: 2rem;" class="btn btn-outline-secondary" href = '#'>Click here to go back up top</a></div>
-</body>
+        <div id="three" class="resource col-md-10">
+          <h3 style="color: black">
+            Round 3: Generate policy options to address high priority challenges
+            (Virtual Meeting)
+          </h3>
+
+          <p style="padding-top: 1rem">
+            During a virtual meeting with AC members and project staff, Round 2
+            survey results are presented and discussed, and structured
+            peer-to-peer discussion is used to generate policy options to
+            address the top-ranking challenges identified in Round 2. The
+            research team qualitatively analyzes the data and refines suggested
+            policy options for rating and ranking in Round 4. Additional policy
+            options are gathered from literature reviews and Aim 1 case studies.
+          </p>
+          <hr />
+        </div>
+
+        <div id="four" class="resource col-md-10">
+          <h3 style="color: black">
+            Round 4: Rate importance, validity and feasibility of each policy
+            option and rank the most important policy options (Delphi survey)
+          </h3>
+          <p style="padding-top: 1rem">
+            The results of Round 3 are presented to AC members and informal
+            feedback is sought on the list of policy options generated. The
+            final proposed policy options for each high-ranking challenge are
+            presented to AC members to rate and rank in an online survey. AC
+            members are asked to specify which institution or actor is best
+            positioned to act on each proposed policy option.
+          </p>
+          <hr />
+        </div>
+
+        <div id="five" class="resource col-md-10">
+          <p>
+            This final phase of the modified policy Delphi process produces a
+            list of policy options that are linked to target audiences that
+            might act on them, such as: research organizations, government
+            agencies, clinical care providers, national trade and laboratory
+            organizations, professional and scientific organizations, committees
+            of Congress or state legislative bodies, or other “receptors.”
+            Serial engagement using the Delphi process with the AC allows us to
+            identify these relevant constituencies and map them to the policy
+            options ranked most important and feasible to address.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a
+        style="margin-bottom: 2rem; margin-top: 2rem"
+        class="btn btn-outline-secondary"
+        href="#"
+        >Click here to go back up top</a
+      >
+    </div>
+  </body>
 </html>
 
 {% endblock %}

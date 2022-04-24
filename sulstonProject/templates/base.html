@@ -13,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <head>
-    <title>The Sulston Project</title>
+    <title>BRAINshare</title>
     <link rel="shortcut icon" type="image/png" href="{% static 'fav_icon.ico' %}"/>
   </head>
 
@@ -46,22 +46,22 @@
 <div id ="contact">
 	<footer>
 
-		<div class ="sticky-bottom  " style="margin-right:5rem">
+		<div class ="sticky-bottom " style="margin-right:5rem">
 
       <nav class="navbar-custom  ">
         <div class="navbar-header">
 
-          <h5>The Sulston Project </h5>
+          <h5>BRAINshare </h5>
         </div>
         <div class="navbar-header  " style="padding-bottom: 2rem;">
           <a href ="{% url 'hello_world'%}">Home</a>  |
-          <a href ="{% url 'about_sulston'%}"> Our Project</a>  |
+          <a href ="{% url 'about'%}"> Our Project</a>  |
           <a href ="{% url 'resources' %}">Our Research</a>  |
           <a href ="{% url 'bio'%}">Meet our Team</a>  |
-          <a href ="{% url 'contact' %}">Contact Us</a>  |
-          <a href ="{% url 'terms_cond' %}">Terms and Conditions</a>  |
+          <a href ="{% url 'contact' %}">Contact Us</a>  
+          <!-- <a href ="{% url 'terms_cond' %}">Terms and Conditions</a>  |
           <a href ="{% url 'privacy' %}">Privacy Policy</a> |
-          <a href ="{% url 'citations' %}">References</a>  
+          <a href ="{% url 'citations' %}">References</a>   -->
        
 
           
@@ -69,7 +69,7 @@
    
         <div class="text-center footer-left">
 
-     <small >© 2020 The Sulston Project</small>
+     <small >© 2022 BRAINshare</small>
     </div>
 
   </div>

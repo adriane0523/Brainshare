@@ -1,108 +1,99 @@
-
-
 {% extends "base.html" %}
 {% load static %}
 {% block page_content %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
-
-	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}" /></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
 	</button>
-
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  <ul class="navbar-nav mr-auto">
-
-		<li class="nav-item">
-		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
-		</li>
-
-		
-		<li class="nav-item dropdown active">
-		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Our Project
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								  
-			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
-			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
-			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
-			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
-
-			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
-   
-		  </div>
-		</li>
-
-		<li class="nav-item dropdown ">
-		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		   Our Research
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
-			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
-			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
-			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
-			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
-		  </div>
-		</li>
-
-
-
-		<li class="nav-item ">
-		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
-		</li>
-
-		<li class="nav-item ">
-		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
-		</li>
-
-
-
-
-	  
-	  </ul>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+			</li>
+			<li class="nav-item dropdown active">
+				<a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Our Project
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+					<a class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+					<a class="dropdown-item" href="{% url 'about_MDP' %}">Modified Policy Delphi</a>
+					<a class="dropdown-item" href="{% url 'about_importance' %}">Why BRAINshare</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" target="_blank"
+						href="https://www.bcm.edu/academic-centers/medical-ethics-and-health-policy/research/neuroethics/brainshare">Project
+						Information
+						<span style="text-transform: none"><br />(BCM Link)</span>
+					</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">
+					Our Research
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+					<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+					<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+					<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'contact' %}">contact us</a>
+			</li>
+		</ul>
 	</div>
-
-
 </nav>
 <body>
 
-    <div class = "text-center hero-image2">
-        <div class = "hero-main-text">
-    <h1>Importance of the Sulston Project</h1></div>
-    
-    
-    </div>
-    
-
-		<div class = "about-nav research-nav text-center ">
-            
-            <a href = "{% url 'about_sulston' %}">About John Sulston</a>
-            <a href = "{% url 'about' %}">Project Narrative</a>
-            <a href = "{% url 'about_aims' %}" >Project Aims</li></a>
-            <a href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
-            <a style="color: black; font-weight: 500;">Importance</a>
-           
-            <hr>
+	<div class="text-center hero-image2">
+		<div class="hero-main-text">
+			<h1>Importance of BRAINshare</h1>
+		</div>
 
 	</div>
-       
-     
+	<div class="about-nav research-nav text-center ">
 
-        <div id ="importance">
-        <p class = "narrow lead about-narrative" > This project is urgent and significant because the clinical and scientific stakes are very high: people facing agonizing decisions about management of inherited cancer risk must have access to reliable genomic information. 
-        Additional impact will come from using these results to help design future genomic commons. This project is innovative in its use of mixed methods, incorporating a Delphi 
-        framework into a policy-committee structure, and its explicit attention to policy translation and engagement. It will be feasible, as demonstrated by the productivity of 
-        this team in prior work, our experience with the methods and knowledge about the existing elements of a commons, and the combination of theory and empirical social science we will employ.</p>
-        </div>
-</div><!-- END -->
+		<!-- <a href = "{% url 'about_sulston' %}">About John Sulston</a> -->
+		<a href="{% url 'about' %}">Project Narrative</a>
+		<a href="{% url 'about_aims' %}">Project Aims</li></a>
+		<a href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
+		<a style="color: black; font-weight: 500;">Importance</a>
+		<hr>
 
-<!--- End Course Section -->
+	</div>
+	<div id="importance">
+		<p class="narrow lead about-narrative"> The BRAIN Initiative promises to significantly advance neuroscience with
+			the development of novel neurotechnologies. To promote equity and maximize the impact of the investment in
+			these research projects, BRAIN Initiative studies are required to provide a plan for sharing data and
+			materials. Further, developing standards to facilitate data sharing, while considering—in a “serious and
+			sustained manner”— ethical issues, such as data privacy and the appropriate use of brain data, and
+			establishing data-sharing platforms, like the Data Archive BRAIN Initiative (DABI) for invasive
+			neurophysiology data, are identified as core principles for the future of the BRAIN Initiative in the
+			Working Group Report to the Advisory Committee to the Director of NIH (ACD), “BRAIN 2025.” In its 2019
+			Neuroethics Roadmap,1 the BRAIN 2.0 Neuroethics Subgroup (BNS) also identified as one of five key priorities
+			for the BRAIN Initiative the need to develop data- sharing standards that will advance science while
+			respecting individual privacy. BRAIN Initiative investigators (including mPI Dr. Sheth) who are funded
+			through the Investigative Human Neuroscience Funding Opportunity Announcements collaborate in an
+			NIH-coordinated Research Opportunities in Humans (ROH) Consortium work group, which aims “to identify
+			consensus standards of practice, including neuroethical considerations, to collect and provide data for
+			ancillary studies, and to aggregate and standardize data for dissemination among the wider scientific
+			community.” <u>The proposed project will support the work of the ROH Consortium work group, and more broadly
+			the development of formal policies and guidelines within the BRAIN Initiative, by providing critical
+			empirical data about specific data sharing challenges and concerns and generating policy and practice
+			options through an extensive process of deliberation involving multiple diverse stakeholder groups.</u> </p>
+	</div>
+	</div><!-- END -->
+	<!--- End Course Section -->
 
-{% endblock %}
+	{% endblock %}

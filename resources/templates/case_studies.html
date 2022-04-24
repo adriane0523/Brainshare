@@ -1,110 +1,58 @@
 {% extends "base.html" %} {% block page_content %} {% load static %}
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
-  <a class="navbar-brand" href="{% url 'hello_world' %}"
-    ><img src="{% static 'logo.png' %}"
-  /></a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+  <a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
         <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
       </li>
-
       <li class="nav-item dropdown">
-        <a
-          class="nav-link dropdown-toggle"
-          href="{% url 'about'%}"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
+        <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Our Project
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{% url 'about_sulston' %}"
-            >About John Sulston</a
-          >
-          <a class="dropdown-item" href="{% url 'about' %}"
-            >Project Narrative</a
-          >
-          <a class="dropdown-item" href="{% url 'about_aims' %}"
-            >Project Aims</a
-          >
-          <a class="dropdown-item" href="{% url 'about_MDP' %}"
-            >Modified Policy Delphi</a
-          >
-
-          <a class="dropdown-item" href="{% url 'about_importance' %}"
-            >Why The Sulston Project</a
-          >
+          <a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+          <a class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+          <a class="dropdown-item" href="{% url 'about_MDP' %}">Modified Policy Delphi</a>
+          <a class="dropdown-item" href="{% url 'about_importance' %}">Why BRAINshare</a>
           <div class="dropdown-divider"></div>
-          <a
-            class="dropdown-item"
-            target="_blank"
-            href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477"
-            >Project Information
-            <span style="text-transform: none"><br />(NIH RePORT)</span>
+          <a class="dropdown-item" target="_blank"
+            href="https://www.bcm.edu/academic-centers/medical-ethics-and-health-policy/research/neuroethics/brainshare">Project
+            Information
+            <span style="text-transform: none"><br />(BCM Link)</span>
           </a>
         </div>
       </li>
-
       <li class="nav-item dropdown active">
-        <a
-          class="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           Our Research
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
-          <a class="dropdown-item" href="{% url 'white_papers' %}"
-            >White Papers</a
-          >
-          <a class="dropdown-item" href="{% url 'publications' %}"
-            >Publications</a
-          >
-          <a class="dropdown-item" href="{% url 'related_projects' %}"
-            >Related Projects</a
-          >
-          <a class="dropdown-item" href="{% url 'related_projects' %}"
-            >Patient Stories</a
-          >
+          <a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+          <a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+          <a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="{% url 'relevant_docs' %}"
-            >Relevant Documents</a
-          >
+          <a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
         </div>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" href="{% url 'contact' %}">contact us</a>
       </li>
     </ul>
   </div>
 </nav>
+
 <body>
   <div class="container-fluid" style="padding-top: 2rem; padding-bottom: 6rem">
     <div class="col-md-10 offset-md-1"></div>
@@ -124,8 +72,11 @@
         <hr />
       </div>
       <div class="text-center" style="padding-top: 2rem"></div>
+      <div> <b>More Coming Soon</b>
+        We are working diligently on our case studies and white papers, and once they've been published, we will upload
+        them here. We look forward to sharing them with you soon. Thank you.</div>
 
-      <div class="row">
+      <!-- <div class="row">
         {% for case in cases %}
         <div class="resource col-lg-4 border">
           {% if case.view %}
@@ -141,18 +92,14 @@
           <p>{{ case.description }}</p>
         </div>
         {% endfor %}
+      </div>-->
+    </div> 
+  </div>
+
+      <div class="text-center">
+        <a style="margin-bottom: 2rem; margin-top: 35rem" class="btn btn-outline-secondary" href="#">Click here to go
+          back up top</a>
       </div>
-    </div>
-  </div>
 
-  <div class="text-center">
-    <a
-      style="margin-bottom: 2rem; margin-top: 2rem"
-      class="btn btn-outline-secondary"
-      href="#"
-      >Click here to go back up top</a
-    >
-  </div>
-
-  {% endblock %}
+      {% endblock %}
 </body>

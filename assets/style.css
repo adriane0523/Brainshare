@@ -5,62 +5,79 @@
         width: auto;
         height: 10rem
     }
+
     h1 {
         font-size: 1.7rem
     }
+
     h5 {
         font-size: 0.6rem
     }
+
     .john {
         width: 178px;
         height: auto;
     }
+
     body {
         font-size: .6rem;
     }
+
     .body-p p {
         font-size: 0.6rem;
     }
+
     .narrative h1 {
         font-size: 1.2rem
     }
+
     .john {
         width: 120px;
         height: auto;
     }
+
     .about-narrative {
         font-size: 0.8rem;
     }
+
     h3 {
         font-size: 1.2rem
     }
+
     .clients img {
         width: 80px;
         height: 80px;
     }
+
     .clients h1 {
         font-size: 1.5rem
     }
+
     .narrow {
         width: 96%;
         margin: 0rem auto;
         padding-top: 2rem;
     }
+
     .about-john blockquote {
         font-size: 0.9rem;
     }
+
     .contact {
         width: 300px;
     }
+
     .about-nav a {
         font-size: 0.8rem;
     }
+
     #pdf {
         width: 300px;
         height: 700px;
     }
-    .resource img{
-        width:40%;
+
+    .resource img {
+        width: 40%;
         height: 40%;
     }
 }
@@ -73,57 +90,73 @@
         height: 0rem;
         width: auto;
     }
+
     h1 {
         font-size: 1.9rem
     }
+
     h5 {
         font-size: 0.6rem
     }
+
     body {
         font-size: .6rem;
     }
+
     .body-p p {
         font-size: 0.6rem;
     }
+
     .narrative h1 {
         font-size: 1.4rem
     }
+
     .about-narrative {
         font-size: 0.8rem;
     }
+
     .john {
         width: 140px;
         height: auto;
     }
+
     h3 {
         font-size: 1.4rem
     }
+
     .clients img {
         width: 80px;
         height: 80px;
     }
+
     .clients h1 {
         font-size: 1.8rem
     }
+
     .narrow {
         width: 90%;
         margin: 0rem auto;
         padding-top: 2rem;
     }
+
     .about-john blockquote {
         font-size: 1rem;
     }
+
     .contact {
         width: 500px;
     }
+
     .about-nav a {
         font-size: 1rem;
     }
+
     #pdf {
         width: 500px;
         height: 700px;
     }
-    .resource img{
+
+    .resource img {
         width: 40%;
         height: 40%;
     }
@@ -137,57 +170,73 @@
         height: 0rem;
         width: auto;
     }
+
     h1 {
         font-size: 2.1rem
     }
+
     h5 {
         font-size: 0.8rem
     }
+
     body {
         font-size: .8rem;
     }
+
     .body-p p {
         font-size: 0.8rem;
     }
+
     .narrative h1 {
         font-size: 1.6rem
     }
+
     .about-narrative {
         font-size: 1rem;
     }
+
     .john {
         width: 170px;
         height: auto;
     }
+
     h3 {
         font-size: 1.6rem
     }
+
     .clients img {
         width: 100px;
         height: 100px;
     }
+
     .clients h1 {
         font-size: 2.1rem
     }
+
     .narrow {
         width: 75%;
         margin: 1.5rem auto;
         padding-top: 2rem;
     }
+
     .about-john blockquote {
         font-size: 1.2rem;
     }
+
     .contact {
         width: 500px;
     }
+
     .about-nav a {
         font-size: 1rem;
     }
+
     #pdf {
         width: 700px;
         height: 700px;
     }
-    .resource img{
+
+    .resource img {
         width: 60%;
         height: 60%;
     }
@@ -201,60 +250,77 @@
         height: 13rem;
         width: auto;
     }
+
     h1 {
         font-size: 2.3rem
     }
+
     h5 {
         font-size: 1rem
     }
+
     body {
         font-size: .8rem;
     }
+
     .body-p p {
         font-size: 0.8rem;
     }
+
     .narrative h1 {
         font-size: 2rem
     }
+
     .about-narrative {
         font-size: 1.2rem;
     }
+
     .john {
         width: 200px;
         height: auto;
     }
+
     h3 {
         font-size: 1.8rem
     }
+
     .clients h1 {
         font-size: 2.3rem
     }
+
     .clients img {
         width: 120px;
         height: 120px;
     }
+
     .narrow {
         width: 75%;
         margin: 1.5rem auto;
         padding-top: 2rem;
     }
+
     .about-john blockquote {
         font-size: 1.8rem;
     }
+
     #pdf {
         width: 900px;
         height: 700px;
     }
+
     .contact {
         width: 500px;
     }
+
     .about-nav a {
         font-size: 1.2rem;
     }
+
     .contact h3 {
         font-size: 1.6rem
     }
-    .resource img{
+
+    .resource img {
         width: 80%;
         height: 80%;
     }
@@ -268,69 +334,88 @@
         height: 13rem;
         width: auto;
     }
+
     h1 {
         font-size: 2.5rem
     }
+
     h5 {
         font-size: 1.2rem
     }
+
     body {
         font-size: 1rem;
     }
+
     .body-p p {
         font-size: 1rem;
     }
+
     .narrative h1 {
         font-size: 2.5rem
     }
+
     .about-narrative {
         font-size: 1.4rem;
     }
+
     .john {
         width: 233px;
         height: auto;
     }
+
     h3 {
         font-size: 2rem
     }
+
     .clients img {
         width: 150px;
         height: 150px;
     }
+
     .clients h1 {
         font-size: 2.5rem
     }
+
     .sidenav {
         height: auto;
         width: 300px;
         top: 14rem;
         left: 8rem;
     }
+
     .about-john blockquote {
         font-size: 2.2rem;
     }
+
     .about-john small {
         font-size: 1.8rem;
     }
+
     #pdf {
         width: 1100px;
         height: 700px;
     }
+
     .narrow {
         width: 75%;
         margin: 1.5rem auto;
         padding-top: 2rem;
     }
+
     .contact {
         width: 500px;
     }
+
     .contact h3 {
         font-size: 1.4rem
     }
+
     .about-nav a {
         font-size: 1.5rem;
     }
-    .resource img{
+
+    .resource img {
         width: 100%;
         height: 100%;
     }
@@ -393,8 +478,8 @@
 
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url("john3.jpg");
-    padding-top: 25rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("john3.jpg");
+    padding-top: 27rem;
     /* Set a specific height */
     height: 50%;
     /* Position and center the image to scale nicely on all screens */
@@ -473,17 +558,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-transform: uppercase;
     letter-spacing: .1rem;
-    font-size: 10vw;
+}
+
+.hero-text h1 {
+    letter-spacing: 5px;
+}
+
+.hero-text h5 {
+    text-transform: uppercase;
 }
 
 footer {
-    background-color: #576068;
+    background-color: #343432;
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
+
+
+
 
 footer a {
     color: white;
@@ -498,7 +592,7 @@ footer img {
 }
 
 .navbar-custom {
-    background-color: #576068;
+    background-color: #343432;
     color: white;
     padding-left: 5rem;
 }
@@ -536,10 +630,11 @@ footer img {
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
-    background-color: white!important;
+    background-color: white !important;
 }
 
 .navbar-brand img {
+    width: 70px;
     /*height*/
 }
 
@@ -597,7 +692,7 @@ footer img {
 
 .research-nav {
     width: auto;
-    border: 2px solid white!important;
+    border: 2px solid white !important;
     padding-top: 1rem;
 }
 
@@ -781,8 +876,8 @@ footer img {
     color: #748fc8;
 }
 
-.resource img{
-    width:40%;
+.resource img {
+    width: 40%;
     height: 40%;
 }
 
@@ -798,8 +893,7 @@ footer img {
     height: auto;
 }
 
-.contact-img img,
-{
+.contact-img img {
     display: inline;
 }
 

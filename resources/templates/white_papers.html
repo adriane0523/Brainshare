@@ -5,105 +5,103 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id = "nav1" >
-
-	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}"></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav1">
+	<a class="navbar-brand" href="{% url 'hello_world' %}"><img src="{% static 'logo.png' %}" /></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
 	</button>
-
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  <ul class="navbar-nav mr-auto">
-
-		<li class="nav-item">
-		  <a class="nav-link" href="{% url 'hello_world' %}">Home</a>
-		</li>
-
-		
-		<li class="nav-item dropdown">
-		  <a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Our Project
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								  
-			<a  class="dropdown-item" href = "{% url 'about_sulston' %}">About John Sulston</a>
-			<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
-			<a  class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
-			<a class="dropdown-item" href = "{% url 'about_MDP' %}">Modified Policy Delphi</a>
-
-			<a class="dropdown-item" href="{% url 'about_importance' %}">Why The Sulston Project</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" target="_blank" href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9901477">Project Information <span style="text-transform: none;"><br>(NIH RePORT)</span> </a>
-   
-		  </div>
-		</li>
-
-		<li class="nav-item dropdown active">
-		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		   Our Research
-		  </a>
-		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
-			<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
-			<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
-			<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
-			<a class="dropdown-item" href="{% url 'patient_stories' %}">Patient Stories</a>
-			<div class="dropdown-divider"></div>
-			<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
-		  </div>
-		</li>
-
-
-
-		<li class="nav-item ">
-		  <a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
-		</li>
-
-		<li class="nav-item ">
-		  <a class="nav-link" href="{% url 'contact' %}">contact us</a>
-		</li>
-	  </ul>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'hello_world' %}">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="{% url 'about'%}" id="navbarDropdown" role="button"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Our Project
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="{% url 'about' %}">Project Narrative</a>
+					<a class="dropdown-item" href="{% url 'about_aims' %}">Project Aims</a>
+					<a class="dropdown-item" href="{% url 'about_MDP' %}">Modified Policy Delphi</a>
+					<a class="dropdown-item" href="{% url 'about_importance' %}">Why BRAINshare</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" target="_blank"
+						href="https://www.bcm.edu/academic-centers/medical-ethics-and-health-policy/research/neuroethics/brainshare">Project
+						Information
+						<span style="text-transform: none"><br />(BCM Link)</span>
+					</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown active">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false">
+					Our Research
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="{% url 'resources' %}">Case Studies</a>
+					<a class="dropdown-item" href="{% url 'white_papers' %}">White Papers</a>
+					<a class="dropdown-item" href="{% url 'publications' %}">Publications</a>
+					<a class="dropdown-item" href="{% url 'related_projects' %}">Related Projects</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="{% url 'relevant_docs' %}">Relevant Documents</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'bio' %}">Meet Our Team</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="{% url 'contact' %}">contact us</a>
+			</li>
+		</ul>
 	</div>
 </nav>
+
 <body>
-<div class=" container-fluid" style="padding-top: 2rem;">
-    <div  class="col-md-8 offset-md-2" style = "padding-bottom: 0 rem">
-        <div class="about-nav research-nav text-center">
-    
-            <a  href="{% url 'resources' %}">Case Studies</a>
-            <a style="font-weight: 500; color:black;"> White Papers</a>
-            <a  href="{% url 'related_projects' %}">Related Projects</a>
-            <a href = "{% url 'publications' %}">Publications</a>
-			<a href="{% url 'patient_stories' %}">Patient Stories</a>
-        </div>
-        <hr>
+	<div class=" container-fluid" style="padding-top: 2rem;">
+		<div class="col-md-8 offset-md-2" style="padding-bottom: 0 rem">
+			<div class="about-nav research-nav text-center">
 
-        <div class ="text-center">
-        <h1 id = "case_study" style="padding-top: 1rem;padding-bottom: 1rem;">White Papers </h1>
-        <hr>
-    </div>
+				<a href="{% url 'resources' %}">Case Studies</a>
+				<a style="font-weight: 500; color:black;"> White Papers</a>
+				<a href="{% url 'related_projects' %}">Related Projects</a>
+				<a href="{% url 'publications' %}">Publications</a>
+				<a href="{% url 'patient_stories' %}">Patient Stories</a>
+			</div>
+			<hr>
 
-        <div id = "whitepapers" class = "resource" style="padding-bottom: 25rem">
-            
-            
+			<div class="text-center">
+				<h1 id="case_study" style="padding-top: 1rem;padding-bottom: 1rem;">White Papers </h1>
+				<hr>
+			</div>
+			<div class="text-center" style="padding-top: 2rem"></div>
+			<div> <b>More Coming Soon</b>
+				We are working diligently on our case studies and white papers, and once they've been published, we will
+				upload
+				them here. We look forward to sharing them with you soon. Thank you.</div>
 
-            <div class = "row" >
-                {% for resource in resources %}
-                    <div class = "resource col-md-8 border offset-md-2" style="margin-bottom:2rem;">
-                     
-                            <h5><a href="{% url 'resource_index' resource.index%}" >{{ resource.title }}</a></h5>
-                            
-                            <p>{{ resource.description }}</p>
-        
-                    </div>
-                {% endfor %}              
-                </div>
+			<!-- <div id="whitepapers" class="resource" style="padding-bottom: 25rem">
+				<div class="row">
+					{% for resource in resources %}
+					<div class="resource col-md-8 border offset-md-2" style="margin-bottom:2rem;">
+						<h5><a href="{% url 'resource_index' resource.index%}">{{ resource.title }}</a></h5>
+						<p>{{ resource.description }}</p>
+					</div>
+					{% endfor %}
+				</div>
 
-        </div>
-        </div>
-    </div>
-</div>
+			</div> -->
+		</div>
+	</div>
+	</div>
+
+	<div class="text-center">
+		<a style="margin-bottom: 2rem; margin-top: 35rem" class="btn btn-outline-secondary" href="#">Click here to go
+			back up top</a>
+	</div>
 
 
-{% endblock %}
+
+	{% endblock %}
 </body>
