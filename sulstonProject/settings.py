@@ -28,7 +28,7 @@ with open('secret_key.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['sulstonproject.org', '165.227.19.52','sulston-project.herokuapp.com', '127.0.0.1', '167.172.115.129']
+ALLOWED_HOSTS = ['147.182.245.137', '127.0.0.1','brainshareproject.org']
 
 
 # Application definition
